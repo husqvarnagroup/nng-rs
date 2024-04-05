@@ -22,5 +22,5 @@ build-nng = ["nng-sys/build-nng"]
 ffi-module = []
 
 [dependencies]
-nng-sys = { version = "1.4.0-rc.0", default-features = false }
+nng-sys = { git = 'https://github.com/husqvarnagroup/nng-rust.git', branch = 'nng-v1.7.3', default-features = false }
 log = "0.4"

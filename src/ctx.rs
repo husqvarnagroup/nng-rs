@@ -162,7 +162,10 @@ expose_options!{
 	SETOPT_STRING = nng_sys::nng_ctx_set_string;
 
 	Gets -> [protocol::reqrep::ResendTime, protocol::survey::SurveyTime];
-	Sets -> [protocol::reqrep::ResendTime, protocol::survey::SurveyTime];
+	Sets -> [protocol::reqrep::ResendTime,
+	         protocol::survey::SurveyTime,
+	         protocol::pubsub::Subscribe,
+	         protocol::pubsub::Unsubscribe];
 }
 
 /// A wrapper around an `nng_ctx`.
